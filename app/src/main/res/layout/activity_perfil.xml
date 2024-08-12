@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilActivity"
+    android:orientation="vertical"
+    android:background="#F8EEEC"
+    android:gravity="center"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/profile_imagen"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:drawableStart="@drawable/usuario"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Nombre "
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:id="@+id/profile_nombre" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:drawableStart="@drawable/correo"
+        android:drawablePadding="16dp"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Correo"
+        android:textColor="#000000"
+        android:id="@+id/profile_correo"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_updatePerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Actualizar datos" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/btn_logout"/>
+</LinearLayout>
